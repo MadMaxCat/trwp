@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="header">ПОЛИКЛИНИКА НОМЕР 15</h1>
+    <% for (let i=0; i < model.length; i++) { %>
+        <li>
+            <%= `${model[i].procedures}, ${model[i].date}` %>
+        </li>
+        <% } %>
+</body>
+
+</html>
