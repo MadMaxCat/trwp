@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 
 <body>
-    <h1 id="header">ПОЛИКЛИНИКА НОМЕР 15</h1>
-    <% for (let i=0; i < model.length; i++) { %>
-        <li>
-            <%= `${model[i].procedures}, ${model[i].date}` %>
-        </li>
-        <% } %>
+    <header>
+        <h1 id="header">Библиотека №15</h1>
+    </header>
+    <div class="root-content">
+        <a class="big-button" id="user-button" href="/users">Пользователи</a>
+        <a class="big-button" id="book-button" href="/books">Книги</a>
+    </div>
+
 </body>
 
 </html>
